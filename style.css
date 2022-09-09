@@ -1,0 +1,200 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-image: url(./shara\ desert.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.main-container {
+    margin: 0px 160px;
+}
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    
+}
+.logo{
+    filter: drop-shadow(8px 8px 3px gray);
+}
+.navbar {
+    display: flex;
+}
+.navbar-menu ul li {
+    list-style: none;
+    margin: 0px 20px;
+    display: inline-block;
+    padding: 0px 10px;
+    
+}
+.navbar-menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+.navbar-icon{
+    display: flex;
+    position: relative;
+    top:-5px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid green;
+}
+.container2-heading h1 {
+    font-size: 100px;
+    color: white;
+    margin-top: 100px;
+    text-shadow: 
+        1px 1px 1px gray,
+        1px 2px 1px gray,
+        1px 3px 1px gray,
+        1px 4px 1px gray,
+        1px 5px 1px gray,
+        1px 6px 1px gray,
+        1px 7px 1px gray,
+        1px 8px 1px gray,
+        1px 9px 1px gray,
+        1px 10px 1px gray,
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+        1px 30px 60px rgba(16,16,16,0.4);
+    
+}
+.container2-heading p {
+    color: white;
+    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container2-heading a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 45px;
+    border-radius: 20px;
+   
+}
+.explore-btn{
+    box-shadow: inset 6px 6px 6px #cbce,
+       inset -6px -6px 6px white;
+}
+.gridbox {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-gap: 30px 60px ;
+    margin-right: 60px;
+}
+.box {
+    width: 220px;
+    height: 240px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 3px 3px 5px gray, -3px -3px 5px rgb(191, 170, 134);
+    
+}
+.box:hover{
+    transform: translateY(-15px);
+}
+.box h1 {
+    font-size: 15px;
+    color: white;
+    margin:10px 0px 0px 0px;
+}
+.box p {
+    font-size: 10px;
+    color: white;
+    margin:10px 0px 0px 0px;
+    text-decoration: bold;
+}
+.box1 {
+    background-image: url(./pic-1.png);
+    background-position: center;
+    background-size: cover;
+}
+.box2 {
+    background-image: url(./pic-2.png);
+    background-position: center;
+    background-size: cover;
+}
+.box3 {
+    background-image: url(./pic-3.png);
+    background-position: center;
+    background-size: cover;
+}
+.box4 {
+    background-image: url(./pic-4.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1000px){
+
+    .container2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .container2-heading {
+        margin-bottom: 20px;
+        margin-left:10px;
+    }
+    .box {
+        width: 450px;
+        height: 200px;
+    }
+    .gridbox {
+        display: grid;
+        grid-template-columns: 200px;
+        grid-gap: 30px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 650px) and (max-width: 800px){
+.container2 {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container2-heading {
+    margin-bottom: 50px;
+}
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 650px){
+    .container2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container2-heading {
+        margin-bottom: 50px;
+    }
+    
+    .navbar ul li {
+        display: block;
+    }
+    .container2-heading h1 {
+        font-size: 55px;
+    }
+    .gridbox {
+        display: grid;
+        grid-template-columns: 200px;
+        grid-gap: 30px;
+    }
+    .box {
+        width: 250px;
+        height: 180px;
+    }
+}
